@@ -13,14 +13,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onInfoClick }) => {
 
       <h3 className="product-title">{product.name}</h3>
 
-      <p className="product-price">
-        Precio: <span>Q{product.price.toFixed(2)}</span>
-      </p>
-
-      <p className="product-stock">Existencias: {product.stock}</p>
 
       <button onClick={() => onInfoClick(product)} className="info-button">
-        Ver información
+        Ver Detalle
       </button>
     </div>
   );
